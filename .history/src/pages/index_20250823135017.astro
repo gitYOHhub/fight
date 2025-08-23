@@ -17,10 +17,10 @@ import Footer from '../components/Footer.astro';
     <Header />
     <h1>{pageTitle}</h1>
     <Footer />
-
   <script>
-    import "../scripts/menu.js";
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('expanded');
+    });
   </script>
-
   </body>
 </html>
